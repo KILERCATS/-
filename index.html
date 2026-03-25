@@ -12,10 +12,11 @@
             <div class="nav-container">
                 <div class="logo">🥞 Блинчики</div>
                 <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Главная</a></li>
-                    <li><a href="#recipes" class="nav-link">Рецепты</a></li>
-                    <li><a href="#history" class="nav-link">История</a></li>
-                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="recipes.html" class="nav-link">Рецепты</a></li>
+                    <li><a href="history.html" class="nav-link">История</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
                 </ul>
             </div>
         </nav>
@@ -27,12 +28,12 @@
             <div class="hero-content">
                 <h1>Добро пожаловать на сайт про блины!</h1>
                 <p>Откройте мир вкусных и традиционных рецептов блинчиков</p>
-                <button class="btn btn-primary">Смотреть рецепты</button>
+                <a href="recipes.html" class="btn btn-primary">Смотреть рецепты</a>
             </div>
         </section>
 
         <!-- Recipes Section -->
-        <section id="recipes" class="recipes">
+        <section class="recipes">
             <div class="container">
                 <h2>Популярные рецепты</h2>
                 <div class="recipe-grid">
@@ -82,7 +83,7 @@
         </section>
 
         <!-- History Section -->
-        <section id="history" class="history">
+        <section class="history">
             <div class="container">
                 <h2>История блинов</h2>
                 <div class="history-content">
@@ -98,15 +99,10 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <section class="contact">
             <div class="container">
                 <h2>Свяжитесь с нами</h2>
-                <form class="contact-form">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Ваша почта" required>
-                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
-                </form>
+                <p style="text-align: center; margin-bottom: 2rem;"><a href="contact.html" class="btn btn-primary">Перейти на страницу контактов</a></p>
             </div>
         </section>
     </main>

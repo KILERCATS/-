@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Блинчики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">🥞 Блинчики</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="recipes.html" class="nav-link">Рецепты</a></li>
+                    <li><a href="history.html" class="nav-link">История</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link active">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Title -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <p>Мы рады слышать от вас! Поделитесь своими вопросами и идеями</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Напишите нам сообщение</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Электронная почта</label>
+                                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон (опционально)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="topic">Тема обращения</label>
+                                <select id="topic" name="topic" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="question">Вопрос о рецепте</option>
+                                    <option value="suggestion">Предложение нового рецепта</option>
+                                    <option value="feedback">Отзыв о сайте</option>
+                                    <option value="collaboration">Сотрудничество</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Ваше сообщение</label>
+                                <textarea id="message" name="message" placeholder="Напишите ваше сообщение..." rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <h2>Информация о контактах</h2>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-content">
+                                <h3>Электронная почта</h3>
+                                <p><a href="mailto:info@blinchiki.ru">info@blinchiki.ru</a></p>
+                                <p><a href="mailto:recipes@blinchiki.ru">recipes@blinchiki.ru</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3>Телефон</h3>
+                                <p>+7 (495) 123-45-67</p>
+                                <p>+7 (900) 987-65-43</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>Адрес</h3>
+                                <p>Москва, ул. Блинная, д. 1</p>
+                                <p>Россия</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h3>График работы</h3>
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                                <p>Сб-Вс: 10:00 - 16:00</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3>Следите за нами</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">👍</a>
+                                <a href="#" class="social-icon">📷</a>
+                                <a href="#" class="social-icon">🐦</a>
+                                <a href="#" class="social-icon">📺</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>❓ Как готовить тонкие блины?</h3>
+                        <p>Секрет тонких блинов - в правильной консистенции теста. Оно должно быть текучим, как молоко. Также важна температура сковороды и скорость её поворота во время жарки.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>🍳 Какую сковороду использовать?</h3>
+                        <p>Лучше всего использовать чугунную или антипригарную сковороду диаметром 20-25 см. Она должна быть хорошо разогрета перед началом жарки.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>🥛 Можно ли заменить молоко на что-то ещё?</h3>
+                        <p>Да, молоко можно заменить на кефир, йогурт или даже воду с добавлением сухого молока. Результат будет немного отличаться, но всё равно вкусно.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>🥄 Сколько отдыхать тесто?</h3>
+                        <p>Традиционно тесто должно отдыхать 15-30 минут перед жаркой. Это помогает глютену расслабиться и делает блины нежнее и эластичнее.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❄️ Как хранить блины?</h3>
+                        <p>Блины можно хранить в холодильнике до 3 дней в герметичном контейнере. Перед подачей прогрейте их в микроволновке или на сковороде.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>🔄 Как размораживать замороженные блины?</h3>
+                        <p>Замороженные блины лучше не размораживать. Просто кладите их на сковороду или в микроволновку - они разморозятся и прогреются одновременно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Подпишитесь на наши новости</h2>
+                    <p>Получайте новые рецепты и интересные статьи прямо на вашу почту</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Введите ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Блинчики - Все права защищены. Сделано с любовью и масло. 🥞</p>
+        </div>
+    </footer>
+</body>
+</html>
