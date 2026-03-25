@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Блинчики - Вкусные рецепты и традиции</title>
+    <title>ДОСТАВКА БЛИНОВ - 5 минут и блин у вас!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo">🥞 Блинчики</div>
+                <div class="logo">🥞 ДОСТАВКА БЛИНОВ</div>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link active">Главная</a></li>
-                    <li><a href="recipes.html" class="nav-link">Рецепты</a></li>
-                    <li><a href="history.html" class="nav-link">История</a></li>
+                    <li><a href="menu.html" class="nav-link">Меню</a></li>
                     <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="order.html" class="nav-link">Заказать</a></li>
                     <li><a href="contact.html" class="nav-link">Контакты</a></li>
                 </ul>
             </div>
@@ -24,142 +24,205 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero">
             <div class="hero-content">
-                <h1>Добро пожаловать на сайт про блины!</h1>
-                <p>Откройте мир вкусных и традиционных рецептов блинчиков</p>
-                <a href="recipes.html" class="btn btn-primary">Смотреть рецепты</a>
+                <h1>🥞 ДОСТАВКА БЛИНОВ</h1>
+                <p>5 минут и блин у вас!</p>
+                <p class="hero-subtitle">Горячие, свежие, вкусные блины прямо к вам домой</p>
+                <a href="menu.html" class="btn btn-primary btn-large">Посмотреть меню</a>
             </div>
         </section>
 
-        <!-- Recipes Section -->
-        <section class="recipes">
+        <!-- Why Us Section -->
+        <section class="why-section">
             <div class="container">
-                <h2>Популярные рецепты</h2>
-                <div class="recipe-grid">
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <circle cx="30" cy="35" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="50" cy="30" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="70" cy="35" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="40" cy="55" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="60" cy="55" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="35" cy="70" r="8" fill="#8b6f47" opacity="0.6"/>
-                            <circle cx="65" cy="70" r="8" fill="#8b6f47" opacity="0.6"/>
-                        </svg>
+                <h2>Почему мы?</h2>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <div class="why-icon">⚡</div>
+                        <h3>5 минут доставки!</h3>
+                        <p>5 минут и блин у вас! Самая быстрая доставка в городе!</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">👨‍🍳</div>
+                        <h3>Качество</h3>
+                        <p>Только лучшие ингредиенты. Готовим как дома, только вкуснее!</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">💰</div>
+                        <h3>Доступно</h3>
+                        <p>Демократичные цены. Вкусная еда для всех!</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-icon">🚚</div>
+                        <h3>Надёжная доставка</h3>
+                        <p>Служба курьеров работает каждый день до позднего вечера</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured">
+            <div class="container">
+                <h2>Популярные блюда</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <circle cx="30" cy="35" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="50" cy="30" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="70" cy="35" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="40" cy="55" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="60" cy="55" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="35" cy="70" r="8" fill="#8b6f47" opacity="0.6"/>
+                                <circle cx="65" cy="70" r="8" fill="#8b6f47" opacity="0.6"/>
+                            </svg>
+                        </div>
                         <h3>Классические блины</h3>
-                        <p>Тонкие, нежные блины на молоке с добавлением яиц и муки. Идеальный завтрак для всей семьи.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
+                        <p class="description">Тонкие блины со сметаной, маслом и вареньем</p>
+                        <p class="price">399 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
                     </div>
 
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <circle cx="30" cy="35" r="7" fill="#3d2817"/>
-                            <circle cx="50" cy="28" r="7" fill="#5a2e7a"/>
-                            <circle cx="70" cy="35" r="7" fill="#3d2817"/>
-                            <circle cx="40" cy="55" r="7" fill="#5a2e7a"/>
-                            <circle cx="60" cy="55" r="7" fill="#3d2817"/>
-                            <circle cx="35" cy="72" r="7" fill="#5a2e7a"/>
-                            <circle cx="65" cy="72" r="7" fill="#5a2e7a"/>
-                        </svg>
-                        <h3>Блины с ягодами</h3>
-                        <p>Нежные блины с добавлением черники, малины или клубники. Украсят ваш завтрак и добавят витаминов.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
-                    </div>
-
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <ellipse cx="50" cy="35" rx="20" ry="18" fill="#f5deb3" opacity="0.8"/>
-                            <ellipse cx="50" cy="55" rx="25" ry="20" fill="#f5deb3" opacity="0.8"/>
-                            <circle cx="40" cy="35" r="6" fill="#8b6f47" opacity="0.5"/>
-                            <circle cx="60" cy="35" r="6" fill="#8b6f47" opacity="0.5"/>
-                            <circle cx="30" cy="60" r="6" fill="#8b6f47" opacity="0.5"/>
-                            <circle cx="70" cy="60" r="6" fill="#8b6f47" opacity="0.5"/>
-                        </svg>
-                        <h3>Блины с творогом</h3>
-                        <p>Пышные блины с творогом - идеальный источник кальция. Подавайте со сметаной и варенье.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
-                    </div>
-
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <path d="M 40 40 Q 35 35 35 30 Q 35 25 40 25 Q 45 25 45 30 Q 45 35 40 40" fill="#d4af37"/>
-                            <path d="M 60 40 Q 55 35 55 30 Q 55 25 60 25 Q 65 25 65 30 Q 65 35 60 40" fill="#d4af37"/>
-                            <path d="M 50 55 Q 45 50 45 45 Q 45 40 50 40 Q 55 40 55 45 Q 55 50 50 55" fill="#d4af37"/>
-                            <circle cx="35" cy="65" r="5" fill="#d4af37"/>
-                            <circle cx="65" cy="65" r="5" fill="#d4af37"/>
-                            <circle cx="50" cy="75" r="5" fill="#d4af37"/>
-                        </svg>
-                        <h3>Блины с медом</h3>
-                        <p>Воздушные блины, идеально сочетающиеся с натуральным медом и орехами. Полезный и вкусный выбор.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
-                    </div>
-
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <ellipse cx="35" cy="40" rx="12" ry="14" fill="#6b4423"/>
-                            <ellipse cx="50" cy="35" rx="12" ry="14" fill="#6b4423"/>
-                            <ellipse cx="65" cy="40" rx="12" ry="14" fill="#6b4423"/>
-                            <ellipse cx="40" cy="62" rx="12" ry="14" fill="#6b4423"/>
-                            <ellipse cx="60" cy="62" rx="12" ry="14" fill="#6b4423"/>
-                            <path d="M 35 40 Q 30 40 28 45" stroke="#4a2f1a" stroke-width="1.5" fill="none"/>
-                        </svg>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <ellipse cx="35" cy="40" rx="12" ry="14" fill="#6b4423"/>
+                                <ellipse cx="50" cy="35" rx="12" ry="14" fill="#6b4423"/>
+                                <ellipse cx="65" cy="40" rx="12" ry="14" fill="#6b4423"/>
+                                <ellipse cx="40" cy="62" rx="12" ry="14" fill="#6b4423"/>
+                                <ellipse cx="60" cy="62" rx="12" ry="14" fill="#6b4423"/>
+                                <path d="M 35 40 Q 30 40 28 45" stroke="#4a2f1a" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
                         <h3>Блины с грибами</h3>
-                        <p>Пикантные блины с грибной начинкой. Прекрасное блюдо для обеда или ужина.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
+                        <p class="description">Блины с жареными грибами и луком</p>
+                        <p class="price">449 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
                     </div>
 
-                    <div class="recipe-card">
-                        <svg class="recipe-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="45" fill="#d4a574"/>
-                            <ellipse cx="40" cy="40" rx="16" ry="14" fill="#f0e68c"/>
-                            <ellipse cx="60" cy="40" rx="16" ry="14" fill="#f0e68c"/>
-                            <ellipse cx="50" cy="60" rx="16" ry="14" fill="#f0e68c"/>
-                            <circle cx="40" cy="40" r="5" fill="#e6d600"/>
-                            <circle cx="60" cy="40" r="5" fill="#e6d600"/>
-                            <circle cx="50" cy="60" r="5" fill="#e6d600"/>
-                        </svg>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <ellipse cx="40" cy="40" rx="16" ry="14" fill="#f0e68c"/>
+                                <ellipse cx="60" cy="40" rx="16" ry="14" fill="#f0e68c"/>
+                                <ellipse cx="50" cy="60" rx="16" ry="14" fill="#f0e68c"/>
+                                <circle cx="40" cy="40" r="5" fill="#e6d600"/>
+                                <circle cx="60" cy="40" r="5" fill="#e6d600"/>
+                                <circle cx="50" cy="60" r="5" fill="#e6d600"/>
+                            </svg>
+                        </div>
                         <h3>Блины с сыром</h3>
-                        <p>Мягкие блины с расплавленным сыром внутри. Простое, но невероятно вкусное решение.</p>
-                        <a href="recipes.html" class="recipe-link">Посмотреть рецепт →</a>
+                        <p class="description">Блины с расплавленным сыром и сливочным маслом</p>
+                        <p class="price">429 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <path d="M 40 40 Q 35 35 35 30 Q 35 25 40 25 Q 45 25 45 30 Q 45 35 40 40" fill="#d4af37"/>
+                                <path d="M 60 40 Q 55 35 55 30 Q 55 25 60 25 Q 65 25 65 30 Q 65 35 60 40" fill="#d4af37"/>
+                                <path d="M 50 55 Q 45 50 45 45 Q 45 40 50 40 Q 55 40 55 45 Q 55 50 50 55" fill="#d4af37"/>
+                                <circle cx="35" cy="65" r="5" fill="#d4af37"/>
+                                <circle cx="65" cy="65" r="5" fill="#d4af37"/>
+                                <circle cx="50" cy="75" r="5" fill="#d4af37"/>
+                            </svg>
+                        </div>
+                        <h3>Блины с медом</h3>
+                        <p class="description">Пушистые блины с натуральным медом и орехами</p>
+                        <p class="price">479 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <circle cx="30" cy="35" r="7" fill="#3d2817"/>
+                                <circle cx="50" cy="28" r="7" fill="#5a2e7a"/>
+                                <circle cx="70" cy="35" r="7" fill="#3d2817"/>
+                                <circle cx="40" cy="55" r="7" fill="#5a2e7a"/>
+                                <circle cx="60" cy="55" r="7" fill="#3d2817"/>
+                                <circle cx="35" cy="72" r="7" fill="#5a2e7a"/>
+                                <circle cx="65" cy="72" r="7" fill="#5a2e7a"/>
+                            </svg>
+                        </div>
+                        <h3>Блины с ягодами</h3>
+                        <p class="description">Блины с черникой, малиной и клубникой</p>
+                        <p class="price">459 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#d4a574"/>
+                                <ellipse cx="50" cy="35" rx="20" ry="18" fill="#f5deb3" opacity="0.8"/>
+                                <ellipse cx="50" cy="55" rx="25" ry="20" fill="#f5deb3" opacity="0.8"/>
+                                <circle cx="40" cy="35" r="6" fill="#8b6f47" opacity="0.5"/>
+                                <circle cx="60" cy="35" r="6" fill="#8b6f47" opacity="0.5"/>
+                                <circle cx="30" cy="60" r="6" fill="#8b6f47" opacity="0.5"/>
+                                <circle cx="70" cy="60" r="6" fill="#8b6f47" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <h3>Блины с творогом</h3>
+                        <p class="description">Пышные блины со сладким творогом и сметаной</p>
+                        <p class="price">439 ₽</p>
+                        <p class="weight">(3 штуки)</p>
+                        <button class="btn btn-small">В корзину</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- History Section -->
-        <section class="history">
+        <!-- Delivery Info -->
+        <section class="delivery-info">
             <div class="container">
-                <h2>История блинов</h2>
-                <div class="history-content">
-                    <p>Блины - это одно из самых древних блюд русской кухни. Их история уходит корнями в глубокое прошлое, когда они готовились на сковородах из глины.</p>
-
-                    <p>В древние времена блины были символом солнца и его плодородной энергии. Особенно популярны они были во время празднования Масленицы - традиционного русского праздника, знаменующего приход весны.</p>
-
-                    <p>Со временем рецепты совершенствовались, и блины стали подаваться с различными начинками и соусами. От скромного крестьянского завтрака блины превратились в любимое блюдо на всех столах - от простых семей до царских пиров.</p>
-
-                    <p>Сегодня блины остаются неотъемлемой частью русской культуры и кухни, символом гостеприимства и семейных традиций.</p>
+                <h2>Информация о доставке</h2>
+                <div class="delivery-grid">
+                    <div class="delivery-item">
+                        <h3>🕐 Время доставки</h3>
+                        <p>⚡ 5 минут после подтверждения заказа!</p>
+                    </div>
+                    <div class="delivery-item">
+                        <h3>📍 Зона доставки</h3>
+                        <p>По всему городу в пределах МКАД</p>
+                    </div>
+                    <div class="delivery-item">
+                        <h3>💳 Оплата</h3>
+                        <p>Наличные, карта, электронные кошельки</p>
+                    </div>
+                    <div class="delivery-item">
+                        <h3>📦 Минимальный заказ</h3>
+                        <p>От 300 рублей (доставка бесплатная от 1000)</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact">
+        <!-- CTA Section -->
+        <section class="cta-section">
             <div class="container">
-                <h2>Свяжитесь с нами</h2>
-                <p style="text-align: center; margin-bottom: 2rem;"><a href="contact.html" class="btn btn-primary">Перейти на страницу контактов</a></p>
+                <h2>Готовы заказать вкусные блины?</h2>
+                <a href="order.html" class="btn btn-primary btn-large">Оформить заказ</a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Блинчики - Все права защищены. Сделано с любовью и масло. 🥞</p>
+            <p>&copy; 2026 ДОСТАВКА БЛИНОВ. 5 минут и блин у вас! 🥞⚡</p>
         </div>
     </footer>
 </body>
