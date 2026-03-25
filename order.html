@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформить заказ - ДОСТАВКА БЛИНОВ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">🥞 ДОСТАВКА БЛИНОВ</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="menu.html" class="nav-link">Меню</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="order.html" class="nav-link active">Заказать</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Оформить заказ</h1>
+                <p>⚡ 5 минут и блин у вас домой!</p>
+            </div>
+        </section>
+
+        <!-- Order Form -->
+        <section class="order-section">
+            <div class="container">
+                <div class="order-wrapper">
+                    <div class="order-form-section">
+                        <h2>Ваши данные</h2>
+                        <form class="order-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Введите имя" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Адрес доставки</label>
+                                <input type="text" id="address" name="address" placeholder="Ул. Примерная, д. 123, кв. 45" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="entrance">Подъезд/Корпус</label>
+                                <input type="text" id="entrance" name="entrance" placeholder="№ подъезда">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="floor">Этаж</label>
+                                <input type="text" id="floor" name="floor" placeholder="Этаж">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment">Комментарий к заказу</label>
+                                <textarea id="comment" name="comment" placeholder="Например: звоните в дверь, собака в квартире" rows="4"></textarea>
+                            </div>
+
+                            <h3>Выберите блюда</h3>
+                            <div class="dishes">
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Классические блины - 399р">
+                                    <span>Классические блины - 399₽</span>
+                                </label>
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Блины с грибами - 449р">
+                                    <span>Блины с грибами - 449₽</span>
+                                </label>
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Блины с сыром - 429р">
+                                    <span>Блины с сыром - 429₽</span>
+                                </label>
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Блины с медом - 479р">
+                                    <span>Блины с медом - 479₽</span>
+                                </label>
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Блины с ягодами - 459р">
+                                    <span>Блины с ягодами - 459₽</span>
+                                </label>
+                                <label class="dish-checkbox">
+                                    <input type="checkbox" name="dish" value="Блины с творогом - 439р">
+                                    <span>Блины с творогом - 439₽</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="payment">Способ оплаты</label>
+                                <select id="payment" name="payment" required>
+                                    <option value="">Выберите способ</option>
+                                    <option value="card">Карта</option>
+                                    <option value="cash">Наличные</option>
+                                    <option value="online">Электронный кошелек</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Отправить заказ</button>
+                        </form>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h2>Сумма заказа</h2>
+                        <div class="summary-item">
+                            <span>Товары:</span>
+                            <span class="price">0 ₽</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Доставка:</span>
+                            <span class="price">Бесплатно*</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-total">
+                            <span>Итого:</span>
+                            <span class="price">0 ₽</span>
+                        </div>
+                        <p class="summary-note">*Бесплатная доставка при заказе от 1000₽</p>
+
+                        <div class="delivery-time">
+                            <h3>⚡ Время доставки</h3>
+                            <p>5 минут после подтверждения</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>📍 Зона доставки</h4>
+                            <p>По всему городу в пределах МКАД</p>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>💬 Контакт поддержки</h4>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ДОСТАВКА БЛИНОВ. 5 минут и блин у вас! 🥞⚡</p>
+        </div>
+    </footer>
+</body>
+</html>
